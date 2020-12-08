@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QueuedSongsActivity">
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="Songs Queue"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:paddingTop="25dp"
+        android:textAlignment="gravity"
+        android:textSize="45dp"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+        android:background="#2f4f4f"/>
+    <ListView
+        android:id="@+id/queued_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

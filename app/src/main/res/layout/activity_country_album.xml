@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".albumSongActivity">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#2f4f4f">
+        <ImageView
+            android:id="@+id/imgCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/albumTitleDisp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgCountry"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+<ListView
+    android:id="@+id/countrList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</ListView>
+</LinearLayout>
